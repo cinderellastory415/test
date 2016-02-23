@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取颜色改变背景颜色</title>
+</head>
+<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	ul{
+		list-style-type: none;
+	}
+	.content{
+		height: 50px;
+		width: 320px;
+		border: 2px solid #000;
+	}
+	.red{
+		background-color: red;
+		height: 50px;
+		width: 80px;
+		float: left;
+	}
+	.green{
+		background-color: green;
+		height: 50px;
+		width: 80px;
+		float: left;
+	}
+	.blue{
+		background-color: blue;
+		height: 50px;
+		width: 80px;
+		float: left;
+	}
+	.yellow{
+		background-color: yellow;
+		height: 50px;
+		width: 80px;
+		float: left;
+	}
+	.bg{
+      background-color: red;
+      height: 324px;
+      width: 324px;
+	}
+</style>
+<script src="http://cinderellastory415.github.io/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".main ul li").click(function(){
+			$(".bg").css('backgroundColor',$(this).css('backgroundColor'));
+			});
+	});
+</script>
+<body>
+	<div class="main">
+		<ul class="content">
+			<li class="red"></li>
+			<li class="green"></li>
+			<li class="blue"></li>
+			<li class="yellow"></li>
+	    </ul>
+	    <ul class="bg">
+	    	
+	    </ul>
+	</div>
+</body>
+</html>
